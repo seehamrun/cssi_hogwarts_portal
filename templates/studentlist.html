@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Students</title>
+  </head>
+  <body>
+    {% if house_info is defined %}
+      <h1>Our {{house_info.name}} students - GO {{house_info.mascot}}s </h1>
+    {% else %}
+      <h1> Our Hogwarts students </h1>
+    {% endif %}
+
+    {% for each_student in student_list %}
+      <h2>{{each_student.first_name}} {{each_student.last_name}}</h2>
+    {% endfor %}
+
+  </body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Houses</title>
+  </head>
+  <body>
+    <h1>Our Houses</h1>
+    {% for each_house in house_info %}
+      <h2>{{each_house.name}} Home Of The {{each_house.mascot}}s</h2>
+      <a href="/students?house={{each_house.name}}"><button>Student List</button></a>
+    {% endfor %}
+  </body>
+</html>
